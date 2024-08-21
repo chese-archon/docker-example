@@ -13,3 +13,17 @@ project
         main.cpp
         sample_hello_world.h
         test.cpp
+На основе статьи https://habr.com/ru/articles/414109/
+
+Сборка и запуск
+Для сборки нашего приложения и создания Docker-образа достаточно будет выполнить следующую команду:
+
+# Здесь docker-cpp-sample название нашего образа
+# . - подразумевает путь к директории, содержащей Dockerfile
+docker build -t docker-cpp-sample .
+# Для запуска приложения используем команду:
+docker run docker-cpp-sample
+# Для передачи параметра достаточно будет добавить его в вышеприведенную команду:
+docker run docker-cpp-sample --help
+Allowed options:
+  -h [ --help ]         Produce this message
