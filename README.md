@@ -27,3 +27,5 @@ docker run docker-cpp-sample
 docker run docker-cpp-sample --help
 Allowed options:
   -h [ --help ]         Produce this message
+
+В результате мы создали полноценное C++ приложение, настроили окружение для его сборки и запуска под Linux и завернули его в Docker-контейнер.
